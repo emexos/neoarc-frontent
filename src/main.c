@@ -4,16 +4,19 @@
 int main(void) {
     initfcscreen();
 
-    create_sidebar();
-    create_mainscreen();
-
     screen_main: {
-        // main page/ information about an app/game
+        create_sidebar();
+        create_mainscreen();
+        create_gameinfoscreen();
     };
 
     fc_dom_render(dom);
 
-    sleep(5);
+    unsigned char c;
+    while (read(STDIN_FILENO, &c, 1) > 0) { // why tf doesnt getcahr work... :(
+        if (c == 'q' || c == 'Q' || c == 3) break;
+    }
+
 
     stopfcscreen();
 
