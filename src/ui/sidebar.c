@@ -8,6 +8,7 @@ void create_sidebar(void){
     fc_box_colors(main_box, FC_CYAN, FC_DEFAULT);
     fc_box_title_color(main_box, FC_BRIGHT_RED);
 
+    /*
     screen_sidebar_context: {
         info_box = fc_box(dom, 2, 2, 35, 8);
         fc_box_title(info_box, "game 1 ");
@@ -19,5 +20,5 @@ void create_sidebar(void){
         fc_text_set(info_txt, "game 2");
         fc_text_colors(info_txt, FC_WHITE, FC_DEFAULT);
         fc_node_attach(info_box, info_txt);
-    }
+    };*/
 }

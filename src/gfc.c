@@ -1,6 +1,9 @@
 #include "gen/gen.h"
 
 void initfcscreen() {
+    dom = fc_dom_new();
+    W = dom->w;
+    H = dom->h;
     fc_term_init();
     fc_term_altscreen(true);
     fc_term_cursor(false);
