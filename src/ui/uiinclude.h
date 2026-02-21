@@ -1,3 +1,4 @@
 #pragma once
-#include "sidebar.h"
-#include "main.h"
+#include "screen/sidebar.h"
+#include "screen/main.h"
+#include "games/games.h"

@@ -1,6 +1,7 @@
 #pragma once
 
 #include "gfc.h"
+#include "../ui/config.h"
 
 #include <fc/lib.h>
 #include <stdio.h>
